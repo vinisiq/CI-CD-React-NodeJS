@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello React!
+          Hello, Vinicius Siqueira!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.valcann.com.br/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Valcann Cloud Inteligence
         </a>
       </header>
     </div>
