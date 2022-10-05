@@ -1,0 +1,29 @@
+Variáveis atribuidas na criação da instância EC2.
+MUDAR USER DATA
+
+diretorio=CI-CD-React-NodeJS
+comando=npm start
+nomeaplicacao=hello-react
+
+
+
+https://www.notion.so/valcann/Provisionamento-de-inst-ncia-EC2-para-uso-no-CodeDeploy-com-User-Data-f93f178feb6f428f96bbe13e9481cd0b
+AVALIAR ISSO AQUI NO supervisord.conf POR ESTE LINK PASSADO
+USAR AS VARIÁVEIS ACIMA
+[program:hello-react]
+command=npm start ; the program (relative uses PATH, can take args)
+process_name=%(program_name)s ; process_name expr (default %(program_name)s)
+directory=/CI-CD-React-NodeJS  ; directory to cwd to before exec (def no cwd)
+autostart=true                ; start at supervisord start (default: true)
+startsecs=15                  ; # of secs prog must stay up to be running (def. 1)
+startretries=3                ; max # of serial start failures when starting (default 3)
+autorestart=unexpected        ; when to restart if exited after running (def: unexpected)
+user=usuário                  ; setuid to this UNIX account to run the program
+stdout_logfile=/logs/app/stdout/stdout.log ; stdout log path, NONE for none; default AUTO
+stdout_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
+stdout_logfile_backups=10     ; # of stdout logfile backups (0 means none, default 10)
+stdout_capture_maxbytes=1MB   ; number of bytes in 'capturemode' (default 0)
+stderr_logfile=/logs/app/stderr/stderr.log ; stderr log path, NONE for none; default AUTO
+stderr_logfile_maxbytes=1MB   ; max # logfile bytes b4 rotation (default 50MB)
+stderr_logfile_backups=10     ; # of stderr logfile backups (0 means none, default 10)
+stderr_capture_maxbytes=1MB   ; number of bytes in 'capturemode' (default 0))
