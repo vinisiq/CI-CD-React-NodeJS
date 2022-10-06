@@ -8,8 +8,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Vinicius
+          CI-CD - AWS EC2 deploy
         </p>
+        <h5>Por Vinicius Siqueira</h5>
         <a
           className="App-link"
           href="https://www.valcann.com.br/"
