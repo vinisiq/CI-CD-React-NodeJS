@@ -1,10 +1,7 @@
 #!/bin/bash
 nomeApp="hello-react"
 cd /hello-react
-
-sudo npm install
-
-sudo npm audit fix --force
+npm install
 
 sudo supervisord
 
