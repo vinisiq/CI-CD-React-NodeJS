@@ -5,10 +5,10 @@ files:
     destination: /hello-react 
 hooks:
   ApplicationStop:
-    - location: /hello-react/scripts/stop.sh
+    - location: scripts/stop.sh
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: /hello-react/scripts/start.sh
+    - location: scripts/start.sh
       timeout: 300
       runas: root
