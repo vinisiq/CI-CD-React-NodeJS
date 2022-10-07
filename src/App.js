@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CI-CD - AWS EC2 deploy
+          Deivison Charles
         </p>
         <h5>Por Vinicius Siqueira</h5>
         <a
