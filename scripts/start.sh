@@ -1,6 +1,6 @@
 #!/bin/bash
 nomeApp="hello-react"
-cd /hello-react/
+sudo cd /hello-react
 sudo npm install
 
 sudo supervisord
